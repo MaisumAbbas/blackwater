@@ -1,0 +1,479 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <style>
+        .shape{
+            width: 50px;
+            height: 50px;
+        }
+        .upper-canvas{
+            opacity: 0 !important
+        }
+        .form-control:focus{
+            border-color: #40556f !important;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body" id="editor" >
+                        <canvas id="c" contenteditable="true" style="background-image: url('/static/assets/img/stage.jpg'); background-repeat: no-repeat; background-size: contain; height:500px !important; max-width: 100%"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Toolbox</h4>
+                    </div>
+                    <div class="card-body">
+                      <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+                        <div class="card card-plain">
+                          <div class="card-header" role="tab" id="headingOne">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Background
+                              <i class="now-ui-icons arrows-1_minimal-down text-info"></i>
+                            </a>
+                          </div>
+                          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-body text-center">
+                                <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                                    <div class="fileinput-new thumbnail">
+                                      <img src="{% static 'assets/img/image_placeholder.jpg' %}" alt="...">
+                                    </div>
+                                    <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                                    <div>
+                                      <span class="btn btn-github btn-round btn-file">
+                                        <span class="fileinput-new">Set Background</span>
+                                        <span class="fileinput-exists">Change</span>
+                                        <input type="file" name="..." id="bgImage" accept=".jpg, .jpeg, .png"/>
+                                      </span>
+                                      <a href="#pablo" class="btn btn-pinterest btn-round fileinput-exists" data-dismiss="fileinput"><i class="fa fa-times"></i> Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-plain">
+                          <div class="card-header" role="tab" id="headingTwo">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Text
+                              <i class="now-ui-icons arrows-1_minimal-down text-info"></i>
+                            </a>
+                          </div>
+                          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-round btn-tumblr btn-block" id="addText"> Add Text </button>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <input type="text" class="form-control" id="text" placeholder="Update Text Here After Selecting It">
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-plain">
+                          <div class="card-header" role="tab" id="headingThree">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Cliparts
+                              <i class="now-ui-icons arrows-1_minimal-down text-info"></i>
+                            </a>
+                          </div>
+                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/balloons1.png' %}" alt="Balloons">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Balloons 1</label>
+                                            </div>
+                                        </div>
+                                    </div>   -->
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/balloon.png' %}" alt="Balloons">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Balloons 2</label>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <!-- <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/heart.png' %}" alt="Heart">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Heart</label>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/mustache.png' %}" alt="Mustache">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Mustache</label>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/hat.png' %}" alt="Hat">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Hat</label>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/glasses.png' %}" alt="Glasses">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Glasses</label>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/heart_glasses.png' %}" alt="Heart Glasses">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Heart Glasses</label>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="clipart" src="{% static 'assets/img/flower.png' %}" alt="Flowers">
+                                            </div>
+                                            <div class="col-md-12">
+                                                <label>Flowers</label>
+                                            </div>
+                                        </div>
+                                    </div>  -->
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card card-plain">
+                            <div class="card-header" role="tab" id="headingThree">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                Shapes
+                                <i class="now-ui-icons arrows-1_minimal-down text-info"></i>
+                              </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="shape" id="circle" src="{% static 'assets/img/circle.png' %}" alt="Circle">
+                                            </div>
+                                            <div class="col-md-12 mt-2">
+                                                <label>Circle</label>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="shape" id="triangle" src="{% static 'assets/img/triangle.png' %}" alt="Triangle">
+                                            </div>
+                                            <div class="col-md-12 mt-2">
+                                                <label>Triangle</label>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="col-md-4 text-center">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <img class="shape" id="rectangle" src="{% static 'assets/img/rectangle.png' %}" alt="Rectangle">
+                                            </div>
+                                            <div class="col-md-12 mt-2">
+                                                <label>Rectangle</label>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card card-plain">
+                            <div class="card-header" role="tab" id="headingFive">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                Colors
+                                <i class="now-ui-icons arrows-1_minimal-down text-info"></i>
+                              </a>
+                            </div>
+                            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+                              <div class="card-body text-center">
+                                  <div class="row">
+                                        <div class="col-md-12 text-left">
+                                            <label>Shapes &amp; Text</label>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <input type="color" class="form-control" id="textColor" data-type="color" value="#000000">
+                                        </div>
+                                        <div class="col-md-12 text-left mt-3">
+                                            <label>Clipart</label>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="color" class="form-control" id="clipartColor" value="#000000">
+                                        </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card card-plain">
+                            <button class="btn btn-pinterest btn-round btn-block" id="removeElement"> Remove Element </button>
+                            <a class="btn btn-behance btn-round btn-block" href="javascript:void(0)" id="download"> Download Image </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/460/fabric.min.js" integrity="sha512-ybPp3kCrNQXdvTfh99YLIdnajWnQvHuEKDJ+b26mxI9w+pLhnBo3HmNLJ1pEUBFO1Q0bfJxApeqecNbmaV763g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        $(document).ready(function() {
+            let mainImage = null;
+            let canvas = new fabric.Canvas('c', {
+                selection: true,
+                uniScaleTransform: true
+            });
+            canvas.uniScaleTransform = true;
+            canvas.setDimensions({width:775, height:500});
+
+            var appObject = function() {
+
+                return {
+                    __canvas: canvas,
+                    __tmpgroup: {},
+                    addText: function() {
+                        var newID = (new Date()).getTime().toString().substr(5);
+                        var text = new fabric.IText('Sample Text', {
+                            fontFamily: 'arial black',
+                            left: 100,
+                            top: 100,
+                            myid: newID,
+                            objecttype: 'text'
+                        });
+
+                        this.__canvas.add(text);
+                        this.addLayer(newID, 'text');
+                    },
+                    setTextParam: function(param, value) {
+                        var obj = this.__canvas.getActiveObject();
+                        if (obj) {
+                            if (param == 'color') {
+                                obj.set('fill', value);
+                            } else {
+                                obj.set(param, value);
+                            }
+                            this.__canvas.renderAll();
+                        }
+                    },
+                    setTextValue: function(value) {
+                        var obj = this.__canvas.getActiveObject();
+                        if (obj) {
+                            obj.setText(value);
+                            this.__canvas.renderAll();
+                        }
+                    },
+                    addClipart: function(value) {
+                        fabric.util.loadImage(value, function(img) {
+                            if(img == null) {
+                                alert("Error!");
+                            }else {
+                                var image = new fabric.Image(img);
+                                image.scaleToWidth(150);
+                                image.scaleToHeight(150);
+                                canvas.add(image).setActiveObject(image);
+                                canvas.renderAll();
+                                mainImage = canvas.getActiveObject().getSrc()
+                            }
+                        }, 
+                        { crossOrigin: 'anonymous' });
+                    },
+                    clipartColor: function(red, green, blue){
+                        let fd = new FormData();
+                        fd.append('image', mainImage);
+                        fd.append('red', red);
+                        fd.append('green', green);
+                        fd.append('blue', blue);
+                        fd.append("csrfmiddlewaretoken", '{{ csrf_token }}');
+
+                        let left = this.__canvas.getActiveObject().left
+                        let top = this.__canvas.getActiveObject().top
+                        let width = this.__canvas.getActiveObject().getBoundingRect().width
+                        let height = this.__canvas.getActiveObject().getBoundingRect().height
+                        this.__canvas.remove(this.__canvas.getActiveObject());
+
+                        $.ajax({
+                            type: "POST",
+                            contentType: false,
+                            processData: false,
+                            url: '{% url "applyColor" %}',
+                            data: fd,
+                            success: function success(data){
+                                let newImage = data.name;
+                                fabric.util.loadImage(newImage, function(img) {
+                                    if(img == null) {
+                                        alert("Error!");
+                                    }else {
+                                        var image = new fabric.Image(img);
+                                        image.set({ 
+                                            left: left, 
+                                            top: top
+                                        });
+                                        image.scaleToWidth(width);
+                                        image.scaleToHeight(height);
+                                        canvas.add(image).setActiveObject(image);
+                                        canvas.renderAll();
+                                    }
+                                }, 
+                                {
+                                    crossOrigin: 'anonymous'
+                                });
+                            },
+                        });  
+                    },
+                    addCircle: function() {
+                        this.__canvas.add(new fabric.Circle({
+                            left: 100,
+                            top: 100,
+                            fill: '#000000',
+                            radius: 50,
+                            originX: 'center',
+                            originY: 'center',
+                            strokeWidth: 0
+                        }));
+                    },
+                    addTriangle: function() {
+                        this.__canvas.add(new fabric.Triangle({
+                            left: 100,
+                            top: 100,
+                            fill: '#000000',
+                            width: 100,
+                            height: 100,
+                            originX: 'center',
+                            originY: 'center',
+                            strokeWidth: 0
+                        }));
+                    },
+                    addRectangle: function() {
+                        this.__canvas.add(new fabric.Rect({
+                            left: 100,
+                            top: 100,
+                            fill: '#000000',
+                            width: 100,
+                            height: 100,
+                            originX: 'center',
+                            originY: 'center',
+                            strokeWidth: 0
+                        }));
+                    },
+                    removeElement: function() {
+                        this.__canvas.remove(this.__canvas.getActiveObject());
+                    },
+                    addLayer: function() {}
+                };
+            }
+
+            var app = appObject();
+
+            $('#bgImage').on('change', function(){
+                const file = $(this).get(0).files[0];
+                if(file){
+                    var reader = new FileReader();
+        
+                    reader.onload = function(){
+                        $("#c").css("background-image", 'url('+reader.result+')');
+                    }
+                    
+                    reader.readAsDataURL(file);
+                }
+            });
+
+            $('#addText').on('click', function(){
+                app.addText();
+            });
+
+            $('#textColor').on('change', function(){
+                app.setTextParam($(this).data('type'), $(this).val());
+            });
+
+            $('#text').keyup(function() {
+                app.setTextValue($(this).val());
+            });
+
+            $('.clipart').on('click', function(){
+                app.addClipart($(this).attr('src'))
+            })
+
+            $('#clipartColor').on('change', function(){
+                var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec($(this).val());
+                let rgb = result ? {
+                    r: parseInt(result[1], 16),
+                    g: parseInt(result[2], 16),
+                    b: parseInt(result[3], 16)
+                } : null;
+                app.clipartColor(rgb.r, rgb.g, rgb.b);
+            })
+
+            $('#circle').on('click', function(){
+                app.addCircle();
+            });
+
+            $('#triangle').on('click', function(){
+                app.addTriangle();
+            });
+
+            $('#rectangle').on('click', function(){
+                app.addRectangle();
+            });
+
+            $('#removeElement').on('click', function(){
+                app.removeElement();
+            });
+
+            $('#download').on('click', function(){
+                var canvas = document.getElementById("c");
+                var ctx = c.getContext("2d");
+                ctx.globalCompositeOperation = "destination-over";
+                var background = new Image();
+                background.src = $('#c').css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1');
+                ctx.drawImage(background, 0, 0, 500 * background.width / background.height, 500);
+                image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
+                var link = document.createElement('a');
+                link.download = "my-image.png";
+                link.href = image;
+                link.click();
+            });
+        });
+    </script>
+{% endblock %}

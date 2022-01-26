@@ -1,0 +1,755 @@
+{% extends 'Website/common/base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+<div role="main" class="main">
+
+    <section class="section section-height-3 pt-0 section-with-shape-divider position-relative border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '120%'}" data-image-src="{% static 'img/demos/business-consulting-3/backgrounds/background-1.jpg' %}" style="background-color: rgb(222 223 225);">
+        <div class="container-fluid mx-5 pb-5 pb-xl-0  mb-5">
+            <div class="row">
+                <div class="col-md-7 col-lg-7 mt-md-5">
+                    
+                    <h6 class="custom-text-background custom-big-font-size-1 text-20 font-weight-bold  clearfix line-height-1 custom-ws-mobile-wrap ws-nowrap pb-2 mb-3 mb-xl-5 appear-animation animated fadeInUpShorter appear-animation-visible lazyloaded" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-bg-src="/static/img/demos/business-consulting-3/backgrounds/text-background.jpg" style="background-image: url('/static/img/demos/business-consulting-3/backgrounds/text-background.jpg'); animation-delay: 250ms;">Blackwater Credit Repair</h6>
+                    
+
+                    <h5>
+                        <strong class="d-block font-weight-semibold text-color-dark text-5-5 line-height-4 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">We navigate you to a path of financial wellbeing by enabling you to improve your credit score<span class="custom-highlight-text-1 font-weight-bold"></span></strong>
+                    </h5>
+                    <p class="text-3-5 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Credit can be a confusing subject for many of us. We at Blackwater Credit Repair strive to help you understand the basics, assess where your credit score is bad and how can you fix it. Our focus is to provide you best professional credit repair services at the best prices.  </p>
+                    <a href="#" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="d-inline-flex align-items-center text-decoration-none appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                        <img width="30" height="30" src="{% static 'img/demos/business-consulting-3/icons/mouse.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary me-2'}" />
+                        Scroll Down
+                    </a>
+                </div>
+                <div class="col-md-5" style="z-index: 1;"  >
+                    <img src="/static/Images/Subtraction_1.png"  class="img-fluid"  >
+                </div>
+            </div>
+
+        </div>
+        <div class="shape-divider shape-divider-bottom" style="height: 212px;">
+            <div class="shape-divider-horizontal-animation shape-divider-horizontal-animation-to-left">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 212" preserveAspectRatio="xMinYMin">
+                    <polygon fill="#F3F3F3" points="0,75 479,161 1357,28 1701,56 1920,26 1920,213 0,212 " />
+                    <polygon fill="#FFFFFF" points="0,91 481,177 1358,44 1702,72 1920,42 1920,212 0,212 " />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" style="margin-top: -310px;">
+        <div class="row">
+            <div class="col-xl-6 ms-xl-auto">
+                <div class="owl-carousel owl-theme custom-carousel-box-shadow-1 custom-dots-style-1 mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 2}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 20, 'loop': false, 'nav': false, 'autoplay': true, 'autoplayTimeout': 5000, 'dots': true}" style="height: 398px;">
+                    <div>
+                        <a href = "{% url 'Home' %}" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-5">
+                                    <div class="text-center"> <img src="{% static 'Images/icon 1 nn.png' %}" style=" display: inline;" class="w-25" /></div>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="{% static 'img/demos/business-consulting-3/icons/infinite-crooked-line.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px; height: 26px;" />
+                                    </div>
+                                    <h2 class="text-5 font-weight-semibold mb-1">Strategic Planning</h2>
+                                    <p class="pb-1 mb-2">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit. </p>
+                                    <span class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
+                                        View More
+                                        <img width="27" height="27" src="{% static 'img/demos/business-consulting-3/icons/arrow-right.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href = "{% url 'Home' %}" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-5">
+                                    <div class="text-center"> <img src="{% static 'Images/icon 3 nn.png' %}" style=" display: inline;" class="w-25" /></div>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="{% static 'img/demos/business-consulting-3/icons/infinite-crooked-line.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px; height: 26px;" />
+                                    </div>
+                                    <h2 class="text-5 font-weight-semibold mb-1">Financial Clean-Up</h2>
+                                    <p class="pb-1 mb-2">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit. </p>
+                                    <span class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
+                                        View More
+                                        <img width="27" height="27" src="{% static 'img/demos/business-consulting-3/icons/arrow-right.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href = "{% url 'Home' %}" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-5">
+                                    <div class="text-center">
+                                        <img src="{% static 'Images/icon 1 nn.png' %}" style=" display: inline;" class="w-25" />
+
+                                    </div>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="{% static 'img/demos/business-consulting-3/icons/infinite-crooked-line.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px; height: 26px;" />
+                                    </div>
+
+                                    <h2 class="text-5 font-weight-semibold mb-1">Fair Credit Report Assessment</h2>
+                                    <p class="pb-1 mb-2">Get a professional assessment of all major credit reports and their scores. </p>
+                                    <span class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
+                                        View More
+                                        <img width="27" height="27" src="{% static 'img/demos/business-consulting-3/icons/arrow-right.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href = "{% url 'Home' %}" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                            <div class="card border-0">
+                                <div class="card-body text-center py-5">
+                                    <div class="text-center"> <img src="{% static 'Images/icon 3 nn.png' %}" style=" display: inline;" class="w-25" /></div>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="{% static 'img/demos/business-consulting-3/icons/infinite-crooked-line.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px; height: 26px;" />
+                                    </div>
+                                    <h2 class="text-5 font-weight-semibold mb-1">Best Credit Repair Service USA</h2>
+                                    <p class="pb-1 mb-2">Fix your credit and raise your score with maximum simplicity.</p>
+                                    <span class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
+                                        View More
+                                        <img width="27" height="27" src="{% static 'img/demos/business-consulting-3/icons/arrow-right.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="aboutus" class="row align-items-xl-center mx-lg-5 pt-4 mt-5">
+            <div class="col-md-10 col-lg-6 mb-5 mb-lg-0">
+                <div class="row row-gutter-sm">
+                    <div class="col-6">
+                        <img src="{% static 'Images/NoPath_-_Copy_4.png' %}" class="img-fluid box-shadow-5" alt="" />
+                    </div>
+                    <div class="col-6">
+                        <img src="{% static 'Images/NoPath.png' %}" class="img-fluid box-shadow-5 mb-4" alt="" />
+                        <img src="{% static 'Images/NoPath_-_Copy.png' %}" class="img-fluid box-shadow-5" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-4 ps-xl-5">
+                <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter">ABOUT US</h2>
+                <h3 class="text-9 text-lg-5 text-xl-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Blackwater Credit Repair – Leave Your Credit Repair Process to the Experts</h3>
+                <p class="text-3-5 pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+                    We have been providing world-class credit repair services for almost XXX years in XXX. We specialize in repairing the health and accuracy of your credit reports. We take pride in being one of the best credit repair services USA.
+                    Our focus is to help you remove any discrepancies and inaccuracies that pull your credit score down. You do not have to live with errors when we can make your credit reports dispute-free.
+                </p>
+                <div class="row align-items-center pb-2 mb-4 mb-lg-1 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+                    <div class="col-5">
+                        <div class="d-flex">
+                            <img width="63" height="63" src="{% static 'img/demos/business-consulting-3/icons/label.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'd-lg-none d-xl-block'}" />
+                            <span class="text-3 font-weight-bold text-color-dark pt-2 ms-2">
+                                <strong class="d-block font-weight-bold text-9 mb-2">240+</strong>
+                                Satisfied Clients
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <blockquote class="custom-blockquote-style-1 m-0 pt-1 pb-2">
+                            <p class="mb-0">To date, we have served XXX clients and are proud to present a 100% customer satisfaction level. Our commitment is to put people first. We strive to make your experience the most satisfying one. </p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                    <a href = "{% url 'FreeConsulting' %}" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-4 btn-py-2 text-3-5" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Get Free Consultation</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row text-center mt-5">
+        <div class="owl-carousel owl-theme carousel-center-active-item" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-1.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-2.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-3.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-4.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-5.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-6.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-4.png' %}" alt="">
+            </div>
+            <div>
+                <img class="img-fluid" src="{% static 'img/logos/logo-2.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-height-4 section-with-shape-divider bg-color-grey-scale-1 border-0 pb-5 m-0">
+        <div class="shape-divider" style="height: 123px;">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 123" preserveAspectRatio="xMinYMin">
+                <polygon fill="#F3F3F3" points="0,90 221,60 563,88 931,35 1408,93 1920,41 1920,-1 0,-1 " />
+                <polygon fill="#FFFFFF" points="0,75 219,44 563,72 930,19 1408,77 1920,25 1920,-1 0,-1 " />
+            </svg>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 col-xl-10 text-center">
+                    <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">WHAT WE DO</h2>
+                    <h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Credit Repair Experts</h3>
+                    <p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+                        Our specialization is in professional credit restoration services tailored to your unique financial needs. You do not have to settle for less when you can qualify for more.
+                        Don’t ignore the importance of your fair credit report and find out the insights on your scores for a better financial future.
+                    </p>
+                </div>
+            </div>
+            <div class="row row-gutter-sm justify-content-center mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                <div class="col-sm-9 col-md-6 col-lg-4 mb-4">
+                    <a href="demo-business-consulting-3-services-detail.html" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                        <div class="card box-shadow-4">
+                            <div class="card-img-top position-relative overlay overlay-show">
+                                <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+                                    <h4 class="font-weight-semibold text-color-light text-6 mb-1">Lorem Lorem</h4>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="{% static 'img/demos/business-consulting-3/icons/infinite-crooked-line.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
+                                    </div>
+                                </div>
+                                <img src="{% static 'Images/NoPath_-_Copy_7.png' %}" class="img-fluid" alt="Card Image" />
+                            </div>
+                            <div class="card-body d-flex align-items-center custom-view-more px-4">
+                                <p class="card-text w-100 mb-0">We analyze your fair credit reports to design a customized plan for your personal credit repair process </p>
+                                <span class="fa fa fa-arrow-right"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-6 col-lg-4 mb-4">
+                    <a href="demo-business-consulting-3-services-detail.html" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                        <div class="card box-shadow-4">
+                            <div class="card-img-top position-relative overlay overlay-show">
+                                <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+                                    <h4 class="font-weight-semibold text-color-light text-6 mb-1">Lorem Lorem</h4>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="img/demos/business-consulting-3/icons/infinite-crooked-line.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
+                                    </div>
+                                </div>
+                                <img src="{% static 'Images/NoPath_-_Copy_8.png' %}" class="img-fluid" alt="Card Image" />
+                            </div>
+                            <div class="card-body d-flex align-items-center custom-view-more px-4">
+                                <p class="card-text w-100 mb-0">Using legal expertise we challenge any inaccuracies, errors, or misinformation in your credit reports </p>
+                                <span class="fa fa fa-arrow-right"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-6 col-lg-4 mb-4">
+                    <a href="demo-business-consulting-3-services-detail.html" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
+                        <div class="card box-shadow-4">
+                            <div class="card-img-top position-relative overlay overlay-show">
+                                <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
+                                    <h4 class="font-weight-semibold text-color-light text-6 mb-1">Lorem Lorem</h4>
+                                    <div class="custom-crooked-line">
+                                        <img width="154" height="26" src="{% static 'img/demos/business-consulting-3/icons/infinite-crooked-line.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
+                                    </div>
+                                </div>
+                                <img src="{% static 'Images/NoPath_-_Copy_9.png' %}" class="img-fluid" alt="Card Image" />
+                            </div>
+                            <div class="card-body d-flex align-items-center custom-view-more px-4">
+                                <p class="card-text w-100 mb-0">We empower you with valuable information and financial advice to improve your credit and grow economically.</p>
+                                <span class="fa fa fa-arrow-right"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href = "{% url 'Home' %}" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-4 btn-py-2 text-3-5" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
+                        <span>All Services</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row text-center pt-3">
+            <div class="col-md-10 mx-md-auto">
+                <h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter">
+                    <span>High-Value Credit Repair Services</span>
+                </h1>
+                <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                    We offer comprehensive services that are needed to take maximum advantage of your credit reports and their scores.
+                    Our proven processes and tools enable you to get rid of any errors and unverified information or data that could be costing you thousands of dollars.
+                    Dealing with almost all credit reporting agencies, our aim is to deliver efficient services for effective results.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+        <div class="home-concept mt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <span class="sun"></span>
+                    <span class="cloud"></span>
+                    <div class="col-lg-2 ms-lg-auto">
+                        <div class="process-image">
+                            <img src="{% static 'Images/Black Water logo/Credit Acore Ananlysics icon.png' %}"  />
+                            <strong>Credit Report Analysis</strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="process-image process-image-on-middle">
+                            <img src="{% static 'Images/Black Water logo/Credit Dispute icon.png' %}" />
+                            <strong>Credit Disputing</strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="process-image">
+                            <img src="{% static 'Images/Black Water logo/Credit Report  Ananlysics icon.png' %}" />
+                            <strong>Dispute Escalating</strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ms-lg-auto">
+                        <div class="project-image">
+                            <img class="img-fluid w-75" src="{% static 'Images/Black Water logo/Disputer Escalating icon.png' %}" style="border-radius: 150px;" />
+                        </div>
+                        <strong class="our-work">Credit Score Analysis and Mentoring</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section border-0 py-4 m-0">
+        <div class="container">
+            <div class="row appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2000">
+                <div class="col">
+                    <div class="owl-carousel nav-outside nav-arrows-1 custom-carousel-box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
+                        <div>
+                            <a href="demo-cleaning-services-services-detail.html" class="text-decoration-none">
+                                <div class="card custom-card-style-1">
+                                    <div class="card-body text-center py-5">
+                                        <div class="custom-card-style-1-image-wrapper text-center justify-content-center d-inline-block mb-3">
+                                            <img class="img-fluid w-50" style="display:inherit" src="{% static 'Images/Black Water logo/ICons/Credit Report icon 2.png' %}" />
+                                        </div>
+                                        <h4 class="custom-card-style-1-title text-color-secondary font-weight-bold mb-2">Credit Report Analysis</h4>
+                                        <p class="custom-card-style-1-description">We obtain your credit reports and create a plan targeting the questionable negative items affecting your credit score. </p>
+                                        <span class="custom-card-style-1-link font-weight-bold">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="demo-cleaning-services-services-detail.html" class="text-decoration-none">
+                                <div class="card custom-card-style-1">
+                                    <div class="card-body text-center py-5">
+                                        <div class="custom-card-style-1-image-wrapper  d-inline-block mb-3">
+                                            <img class="img-fluid w-50" style="display:inherit" src="{% static 'Images/Black Water logo/ICons/Credit Score icon 2.png' %}" />
+                                        </div>
+                                        <h4 class="custom-card-style-1-title text-color-secondary font-weight-bold mb-2">Credit Report Analysis</h4>
+                                        <p class="custom-card-style-1-description">Our team will send the appropriate correspondence to dispute and challenge the inaccurate negative items on your behalf. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="demo-cleaning-services-services-detail.html" class="text-decoration-none">
+                                <div class="card custom-card-style-1">
+                                    <div class="card-body text-center py-5">
+                                        <div class="custom-card-style-1-image-wrapper  d-inline-block mb-3">
+                                            <img class="img-fluid w-50" style="display:inherit" src="{% static 'Images/Black Water logo/ICons/Dispute Escalaing icon 2.png' %}" />
+                                        </div>
+                                        <h4 class="custom-card-style-1-title text-color-secondary font-weight-bold mb-2">Dispute Escalating</h4>
+                                        <p class="custom-card-style-1-description">For negative items requiring additional correspondence, we keep the process going and ensure your credit rights are fairly represented. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="demo-cleaning-services-services-detail.html" class="text-decoration-none">
+                                <div class="card custom-card-style-1">
+                                    <div class="card-body text-center py-5">
+                                        <div class="custom-card-style-1-image-wrapper  d-inline-block mb-3">
+                                            <img class="img-fluid w-50" style="display:inherit" src="{% static 'Images/Black Water logo/ICons/Dispute ICon 2.png' %}" />
+                                        </div>
+                                        <h4 class="custom-card-style-1-title text-color-secondary font-weight-bold mb-2">Credit Score Analysis and Mentoring</h4>
+                                        <p class="custom-card-style-1-description">Through the online portal and app, we offer 24/7 access to your credit score analyses' and credit counseling solutions to help you reach your credit goals. </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid mx-md-5 mb-5 pb-4">
+
+        <div class="row">
+            <div class="col mb-4">
+                <hr class="my-5">
+            </div>
+        </div>
+
+        <div class="row pb-3">
+            <div class="col-lg-8">
+                <h2 class="font-weight-normal text-7">Our <strong class="font-weight-extra-bold">Features</strong></h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-life-ring text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Credit Report Analysis</h4>
+                                <p class="mb-4">Obtaining, assessing, and analyzing your credit reports is our responsibility. We ensure expert analysis of every aspect. </p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-file-pdf text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Initiating Credit Dispute Resolution</h4>
+                                <p class="mb-4">We take care of necessary correspondence and actions needed to dispute and challenge negative elements in your report</p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-google-drive text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Dispute Escalation</h4>
+                                <p class="mb-4">Any additional effort required to manage high stake disputes is guaranteed through an ongoing process with regular follow-ups. </p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-edit text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Financial Credit Mentoring</h4>
+                                <p class="mb-4">We educate you with valuable credit information and understanding through regular emails, chats, and live sessions. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-layer-group text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Credit Goal Settings</h4>
+                                <p class="mb-4">Our credit experts provide personalized counseling to help you draft your future credit goals and also provide professional guidance in how to achieve them.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-user text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Service Level Variety</h4>
+                                <p class="mb-4">With several pre-designed credit repair packages, we offer different service levels to suit every budget and requirement. Each option offers you varied coverage to improve your reports.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-box text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Customized Credit Solutions</h4>
+                                <p class="mb-4">At Blackwater, we understand that every client has different credit repair needs. We provide customized packages tailored to your unique requirements. </p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-box-style-2">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-laptop text-color-primary"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4 class="font-weight-bold text-4-5 mb-1">Proven Client Results</h4>
+                                <p class="mb-4">Having served thousands of clients in the past XXX years, we share a strong bond with our highly satisfied and loyal customer with great credit rankings. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="font-weight-normal text-6">and more...</h2>
+
+                <div class="accordion accordion-modern" id="accordion">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h4 class="card-title m-0">
+                                <a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseOne">
+                                    <i class="icons icon-diamond text-color-primary"></i>
+                                    Creative Websites
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="collapse show">
+                            <div class="card-body text-2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blanorem ipsum dolor sit amet, consecte.</p>
+                                <p class="mb-0">Adipiscing elit phasellus blanit ma... <a href="#" class="d-block text-color-dark font-weight-semibold pt-4">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h4 class="card-title m-0">
+                                <a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseTwo">
+                                    <i class="icons icon-bubble text-color-primary"></i>
+                                    Contact Forms
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="collapse">
+                            <div class="card-body text-2">
+                                <p class="mb-0">Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h4 class="card-title m-0">
+                                <a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseThree">
+                                    <i class="icons icon-grid text-color-primary"></i>
+                                    Portfolio Pages
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="collapse">
+                            <div class="card-body text-2">
+                                <p class="mb-0">Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row py-5 my-5">
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-start appear-animation mt-2 pt-1" data-appear-animation="fadeInRightShorter">
+                <div class="owl-carousel owl-theme nav-style-1 mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 25, 'loop': true, 'nav': false, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000}">
+                    <div>
+                        <img class="img-fluid rounded-0 mb-4" src="{% static 'Images/NoPath_-_Copy_25.png' %}" />
+                        <h3 class="font-weight-bold text-color-dark text-4 mb-0">John Doe</h3>
+                        <p class="text-2 mb-0">CEO</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid rounded-0 mb-4" src="{% static 'Images/NoPath_-_Copy_27.png' %}" />
+                        <h3 class="font-weight-bold text-color-dark text-4 mb-0">Jessica Doe</h3>
+                        <p class="text-2 mb-0">CEO</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid rounded-0 mb-4" src="{% static 'Images/NoPath_-_Copy_28.png' %}" />
+                        <h3 class="font-weight-bold text-color-dark text-4 mb-0">Chris Doe</h3>
+                        <p class="text-2 mb-0">DEVELOPER</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid rounded-0 mb-4" src="{% static 'Images/NoPath_-_Copy_29.png' %}" />
+                        <h3 class="font-weight-bold text-color-dark text-4 mb-0">Julie Doe</h3>
+                        <p class="text-2 mb-0">SEO ANALYST</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid rounded-0 mb-4" src="{% static 'Images/NoPath_-_Copy_26.png' %}" />
+                        <h3 class="font-weight-bold text-color-dark text-4 mb-0">Robert Doe</h3>
+                        <p class="text-2 mb-0">DESIGNER</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 text-center text-md-start mb-5 mb-md-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+                <h2 class="text-color-dark font-weight-normal text-6 mb-2">Meet <strong class="font-weight-extra-bold">Our Team</strong></h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit massa enim. Nullam id varius nunc.</p>
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex, et faucibus lacus venenatis eget.</p>
+                <a href="page-team.html" class="btn btn-dark font-weight-semibold rounded-0 px-5 btn-py-2 text-2 p-relative bottom-3">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section section-height-3 bg-primary border-0 m-0 appear-animation" data-appear-animation="fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                    <h2 class="font-weight-bold text-color-light text-6 mb-4">Latest Posts</h2>
+                </div>
+            </div>
+            <div class="row recent-posts appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="blog-post.html" class="text-decoration-none">
+                                    <img src="{% static 'Images/NoPath_-_Copy_7.png' %}" class="img-fluid hover-effect-2 mb-3" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto pe-0">
+                                <div class="date">
+                                    <span class="day bg-color-light text-color-dark font-weight-extra-bold">15</span>
+                                    <span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+                                </div>
+                            </div>
+                            <div class="col ps-1">
+                                <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-light">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                <p class="text-color-light line-height-5 opacity-6 pe-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="/" class="read-more text-color-light font-weight-semibold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="blog-post.html" class="text-decoration-none">
+                                    <img src="{% static 'Images/NoPath_-_Copy_8.png' %}" class="img-fluid hover-effect-2 mb-3" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto pe-0">
+                                <div class="date">
+                                    <span class="day bg-color-light text-color-dark font-weight-extra-bold">14</span>
+                                    <span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+                                </div>
+                            </div>
+                            <div class="col ps-1">
+                                <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-light">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                <p class="text-color-light line-height-5 opacity-6 pe-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="/" class="read-more text-color-light font-weight-semibold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="blog-post.html" class="text-decoration-none">
+                                    <img src="{% static 'Images/NoPath_-_Copy_9.png' %}" class="img-fluid hover-effect-2 mb-3" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto pe-0">
+                                <div class="date">
+                                    <span class="day bg-color-light text-color-dark font-weight-extra-bold">13</span>
+                                    <span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+                                </div>
+                            </div>
+                            <div class="col ps-1">
+                                <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-light">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                <p class="text-color-light line-height-5 opacity-6 pe-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="/" class="read-more text-color-light font-weight-semibold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="blog-post.html" class="text-decoration-none">
+                                    <img src="{% static 'Images/NoPath_-_Copy_9.png' %}" class="img-fluid hover-effect-2 mb-3" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto pe-0">
+                                <div class="date">
+                                    <span class="day bg-color-light text-color-dark font-weight-extra-bold">12</span>
+                                    <span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+                                </div>
+                            </div>
+                            <div class="col ps-1">
+                                <h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-light">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                <p class="text-color-light line-height-5 opacity-6 pe-4 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a href="/" class="read-more text-color-light font-weight-semibold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-with-shape-divider position-relative bg-dark border-0 m-0">
+        <div class="shape-divider shape-divider-reverse-x z-index-3" style="height: 102px;">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 102" preserveAspectRatio="xMinYMin">
+                <polygon fill="#F3F3F3" points="0,65 220,35 562,63 931,10 1410,68 1920,16 1920,103 0,103 " />
+                <polygon fill="#EDEDED" points="0,82 219,51 562,78 931,26 1409,83 1920,32 1920,103 0,103 " />
+            </svg>
+        </div>
+        <div class="position-absolute top-0 right-0 overlay overlay-show overlay-color-primary overlay-op-9 h-100 lazyload d-none d-md-block" data-bg-src="{% static 'img/demos/business-consulting-3/backgrounds/background-2.jpg' %}" style="width: 32%; background-size: cover; background-position: center;"></div>
+        <div class="container">
+            <div class="row align-items-center pt-5 pb-xl-5 mt-5">
+                <div class="col-md-7 col-lg-8 py-4 my-2 ms-md-3 ms-lg-0">
+                    <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">GET IN TOUCH</h2>
+                    <h3 class="text-9 line-height-3 text-transform-none font-weight-medium text-color-light ls-0 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Let Us Help You Improve Your Credit Score</h3>
+                    <p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+                        If you are ready to take action on your existing low credit score, we are here to help.
+                        Work with the best credit repair services USA to remove any inaccuracies and negative information on your reports to enjoy greater benefits of your improved financial strength.
+                        For more information and details contact us today!
+                    </p>
+                    <form class="contact-form form-style-4 form-placeholders-light form-errors-light appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" action="php/contact-form.php" method="POST">
+                        <div class="contact-form-success alert alert-success d-none mt-4">
+                            <strong>Success!</strong> Your message has been sent to us.
+                        </div>
+
+                        <div class="contact-form-error alert alert-danger d-none mt-4">
+                            <strong>Error!</strong> There was an error sending your message.
+                            <span class="mail-error-message text-1 d-block"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col">
+                                <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="name" placeholder="* Full Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="email" placeholder="* Email Address" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="form-group col">
+                                <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="message" placeholder="* Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
+                                <button type="submit" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-4 btn-py-2 text-3-5" data-loading-text="Loading..." data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
+                                    <span>Send Message</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        {% include 'Website/common/head.html' %}
+        {% block head %} {% endblock %}
+    </head>
+    <body data-plugin-cursor-effect>
+        <div class="body">
+        {% include 'Website/common/navbar.html' %}
+
+        {% block content %} {% endblock %}
+        
+        {% include 'Website/common/footer.html' %}
+        </div>
+        {% include 'Website/common/foot.html' %}
+        {% block foot %} {% endblock %}
+    </body>
+</html>

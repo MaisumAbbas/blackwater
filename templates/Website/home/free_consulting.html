@@ -1,0 +1,120 @@
+{% extends 'Website/common/base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Free Consulting</title>
+{% endblock %}
+
+{% block content %}
+
+<div role="main" class="main">
+
+    <section class="section section-with-shape-divider page-header page-header-modern page-header-lg border-0 my-0 lazyload" data-bg-src="{% static 'img/demos/business-consulting-3/backgrounds/background-5.jpg' %}" style="background-size: cover; background-position: center;">
+        <div class="container pb-5 my-3">
+            <div class="row mb-4">
+                <div class="col-md-12 align-self-center p-static order-2 text-center">
+                    <h1 class="font-weight-bold text-color-dark text-10">Free Consulting</h1>
+                </div>
+                <div class="col-md-12 align-self-center order-1">
+                    <ul class="breadcrumb d-block text-center">
+                        <li><a href="demo-business-consulting-3.html">Black Water</a></li>
+                        <li class="active">Consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shape-divider shape-divider-bottom shape-divider-reverse-x" style="height: 123px;">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 123" preserveAspectRatio="xMinYMin">
+                <polygon fill="#F3F3F3" points="0,90 221,60 563,88 931,35 1408,93 1920,41 1920,-1 0,-1 " />
+                <polygon fill="#FFFFFF" points="0,75 219,44 563,72 930,19 1408,77 1920,25 1920,-1 0,-1 " />
+            </svg>
+        </div>
+    </section>
+    <div class="container py-4">
+
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 mb-5 mb-lg-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="{% static 'Images/Black Water logo/ICons/Credit Score icon 2.png' %}" class="w-50" />
+                            </div>
+                            <div class="col-md-6">
+                                <h4>
+                                    Black Water Credit Repair provided over <strong class="text-primary">540,000 FREE</strong> online credit report consultations in 2020
+                                    alone.
+                                </h4>         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <h4>When you get your credit assessment you receive:</h4>
+                    <ul>
+                        <li>
+                            FREE Credit score
+                        </li>
+                        <li>
+                            FREE Credit report summary
+                        </li>
+                        <li>
+                            FREE Credit repair recommendation
+                        </li>
+                    </ul>
+                    <h4>
+                        Before we can view your credit, we’ll need some information from you.
+                    </h4>
+                    <h5>
+                        Don’t worry, this is completely secure and won’t hurt your credit score.
+                    </h5>
+                </div>
+                <form action="/" id="frmSignIn" method="post" class="needs-validation mt-5">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="form-label text-color-dark text-3">First Name <span class="text-color-danger">*</span></label>
+                            <input type="text" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-label text-color-dark text-3">Last Name<span class="text-color-danger">*</span></label>
+                            <input type="text" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="form-label text-color-dark text-3">Email address <span class="text-color-danger">*</span></label>
+                            <input type="text" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-label text-color-dark text-3">Phone Number <span class="text-color-danger">*</span></label>
+                            <input type="text" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="form-label text-color-dark text-3">Street address <span class="text-color-danger">*</span></label>
+                            <input type="text" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-label text-color-dark text-3">Zip Code<span class="text-color-danger">*</span></label>
+                            <input type="text" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col">
+                            <button type="submit" class="btn btn-dark btn-modern w-100 text-uppercase rounded-0 font-weight-bold text-3 py-3" data-loading-text="Loading...">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
